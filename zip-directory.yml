@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+  - name: Ansible zip file with path example
+    archive:
+      path: {{ src_dir_value }}
+      dest: {{ des_dir_value }}/{{ dest_filename_value }}.zip
+      format: zip
